@@ -21,6 +21,6 @@ def collect_logging_info(urgency):
         "Model": model,
         "Serial": serial,
         "Future Notes": notes,
-        "Parts Needed": partslist
+        "Parts Needed": partslist,
         "Proposed Callback Time": callback
     }
