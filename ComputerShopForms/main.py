@@ -38,6 +38,6 @@ def save_repair_ticket():
     # Print an error message if an exception occurs
     except Exception as e:
         print(f"An error occurred while creating the repair ticket: {e}")
-# This script collects diagnostic, invoice, and logging information, then saves it to a Word document.
+# 
 if __name__ == "__main__":
     save_repair_ticket()
