@@ -1,7 +1,7 @@
 Clifford Totten 
 Computer Repair Shop Form Filler 
 
-Before writing this program, there were 3 separate forms that needed to be filled out. Writing all the information 3x by hand is absolutely tedious and caused more failures than I would like to admit. This program allows you to create a diagnostic, invoice, and log form for customers in one go. Can be modified to adapt to the business being performed, but this specifically is for the Computer Repair Shop. 
+Before writing this program, there were 3 separate forms that needed to be filled out. Writing all the information 3x by hand is absolutely tedious and caused more failures than I would like to admit. This program allows you to create a diagnostic, invoice, and log form for customers in one go. Can be modified to adapt to the business being performed, but this specifically is for my computer repair shop. 
 
 Requires installation of python-docx via terminal
 Requires Docx/ODT Viewer extension
