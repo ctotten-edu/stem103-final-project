@@ -15,6 +15,7 @@ I also attempted to run the script multiple times with user inputs to observe co
 
 Overall, I learned how to plan and build a small Python application from scratch with testable components. 
 One of the key Python concepts I explored was error handling using try/except blocks, which helped me manage unexpected user input and runtime issues more gracefully. 
+I learned how to use docx as well, which is incredibly useful for me 
 I also became more comfortable using functions to keep the code reusable.
 One big challenge I faced was that I have horrible procrastination tendencies. Thankfully, I overcame this by having the main portion of the code be completed before the end of the second week.
 One major challenge I faced was debugging an issue related to handling edge cases, where the program would crash on empty input. I overcame it by writing conditional checks and adding specific exceptions for those cases. 
