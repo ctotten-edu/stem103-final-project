@@ -1,11 +1,18 @@
 # Collecting invoice information for invoice form
+def get_nonempty_input(prompt):
+    while True:
+        value = input(prompt).strip()
+        if value:
+            return value
+        else:
+            print("This field cannot be empty. Please try again.")
 
 def collect_invoice_info(issue_type, description):
     print("\n--- Invoice Form ---")
     
     invoice = {}
     if issue_type in ['diagnostic', 'repair', 'maintenance']:
-        urgency = input("Urgency Level (standard, priority, rush): ").strip().lower() # Have the user specify urgency level
+        urgency = get_nonempty_input("Urgency Level (standard, priority, rush): ").strip().lower() # Have the user specify urgency level
         processing_costs = {
             'standard': (89.00, "5-6 business days"),
             'priority': (150.00, "1-2 business days"),
@@ -32,7 +39,7 @@ def collect_invoice_info(issue_type, description):
         }
 
     else:
-        detail = input("Enter one-line detail for invoice: ")
+        detail = get_nonempty_input("Enter one-line detail for invoice: ")
         invoice = {
             "Invoice Detail": detail
         }

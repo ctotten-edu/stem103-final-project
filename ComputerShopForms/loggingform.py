@@ -1,13 +1,20 @@
 # Module for collecting logging form information
+def get_nonempty_input(prompt):
+    while True:
+        value = input(prompt).strip()
+        if value:
+            return value
+        else:
+            print("This field cannot be empty. Please try again.")
 
 def collect_logging_info(urgency):
     print("\n--- Logging Form ---")
 
-    make = input("Device Make: ")
-    model = input("Device Model: ")
-    serial = input("Serial Number: ")
-    notes = input("Notes for future fixes: ")
-    partslist = input("Parts needed (comma-separated): ")
+    make = get_nonempty_input("Device Make: ")
+    model = get_nonempty_input("Device Model: ")
+    serial = get_nonempty_input("Serial Number: ")
+    notes = get_nonempty_input("Notes for future fixes: ")
+    partslist = get_nonempty_input("Parts needed (comma-separated): ")
     callback_times = {
         'rush': "6 hours",
         'priority': "1 day",
